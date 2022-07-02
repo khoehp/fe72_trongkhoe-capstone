@@ -1,0 +1,22 @@
+.title-small{
+    font-size: 1.4rem;
+    font-weight: $fw-semibold;
+    text-transform: uppercase;
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
+    color: $c1-100;
+    display: block;
+}
+
+.title-big{
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    font-weight: $fw-bold;
+    color: $c1-500;
+}
+.title-header{
+    font-size: 2.2rem;
+    font-weight: $fw-semibold;
+    color: $c1-500;
+    margin-bottom: 1rem;
+}

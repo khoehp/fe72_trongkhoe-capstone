@@ -1,0 +1,212 @@
+.carousel {
+  background-image: url(../img/b1.jpg);
+}
+
+.sv-feature {
+  background-color: $c1-300;
+  .heading {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .row {
+    .col-lg-6 {
+      padding: 1.5rem;
+      .item-left {
+        height: 100%;
+        padding: 4.5rem 5rem;
+        background: $cWhite;
+        text-align: center;
+        img {
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 1.6rem;
+        }
+        h3 {
+          font-size: 2.8rem;
+          font-weight: $fw-semibold;
+          line-height: 3.4rem;
+          margin-bottom: 2.2rem;
+        }
+        .btn {
+          margin-top: 1rem;
+          padding: 1.5rem 5rem;
+          @include tablet-md {
+            padding: 1.5rem 4rem;
+          }
+        }
+        @include mobile-xs {
+          padding: 4.5rem 1rem;
+        }
+      }
+      .item-right {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// SERVIC
+.sv-service {
+  .heading {
+    text-align: center;
+  }
+  .row {
+    .col-12 {
+      padding: 1.5rem;
+      .item {
+        position: relative;
+        background-color: $c3-300;
+        border-radius: 0.8rem;
+        padding: 5rem 3rem;
+        .col-2 {
+          .icon {
+            font-size: 3.8rem;
+            width: 4rem;
+            color: $c2-100;
+          }
+        }
+        .col-10 {
+          padding-left: 1.5rem;
+          .title-header {
+            @include tablet-md {
+              font-size: 2.2rem !important;
+            }
+            @include mobile-sm {
+              font-size: 1.8rem !important ;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// QUOTE
+.sv-quote {
+  position: relative;
+  background: url(../img/bg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  .row {
+    .col-left {
+      padding-right: 5rem;
+      .title {
+        .quote-info {
+          display: flex;
+          padding: 3rem 0;
+          border-bottom: 0.1rem solid #aaa;
+          align-items: center;
+          .appy-sub-icon {
+            width: 15%;
+            font-size: 4rem;
+            color: $cWhite;
+            @include mobile-xs {
+              font-size: 3rem;
+              padding-right: 1.5rem;
+            }
+          }
+          .appy-sub-info {
+            h5 {
+              color: $cWhite;
+              font-size: 2rem;
+              font-weight: bold;
+            }
+            p {
+              color: $c3-200;
+              font-size: 1.8rem;
+            }
+          }
+        }
+        .qoute-info1 {
+          border-bottom: none;
+        }
+      }
+      @include tablet-md {
+        padding: 0 2rem;
+      }
+      @include mobile-xs {
+        padding: 0;
+      }
+    }
+    .col-right {
+      border-radius: 0.8rem;
+      background-color: $cWhite;
+      padding: 6rem;
+      h3 {
+        font-size: 2.8rem;
+      }
+      .form-control {
+        margin-bottom: 2rem;
+        background: $c3-300;
+        width: 100%;
+        border: none;
+        height: 6rem;
+        font-size: 1.7rem;
+        color: $c1-200;
+        padding: 1.2rem 2.5rem;
+      }
+      textarea {
+        height: 10rem !important;
+      }
+      @include mobile-sm {
+        padding: 2rem 1rem;
+      }
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    min-height: 100%;
+    background: rgba(29, 42, 55, 0.7);
+  }
+}
+
+// PROJECT
+.sv-project {
+  background-color: $c1-300;
+  .heading {
+    text-align: center;
+  }
+  .row {
+    margin-top: 5rem;
+    .col-12 {
+      padding: 1.5rem;
+      .item {
+        background-color: $cWhite;
+        padding: 4rem 3rem;
+        text-align: center;
+        border-radius: 0.8rem;
+        box-shadow: rgba(1, 1, 1, 0.05) 0.1rem 0.1rem 0.5rem 0;
+        transition: all 0.3s ease;
+        .icon {
+          img {
+            max-width: 6.5rem;
+          }
+        }
+        h3 {
+          margin-top: 2.5rem;
+          margin-bottom: 2rem;
+          &:hover {
+            cursor: pointer;
+            color: $c2-100;
+          }
+        }
+        &:hover {
+          transform: translateY(-0.3rem);
+          box-shadow: rgba(46, 41, 51, 0.08) 0 0.2rem 0.4rem,
+            rgba(71, 63, 79, 0.16) 0 0.5rem 1rem;
+          transition: 0.3s ease;
+        }
+      }
+    }
+  }
+}

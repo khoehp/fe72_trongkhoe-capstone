@@ -1,0 +1,83 @@
+* {
+  font-family: "Jost", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem !important;
+}
+li{
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-size: 1.7rem;
+  line-height: 2.7rem;
+  color: $c1-200;
+  opacity: 0.8;
+}
+h3{
+  @include tablet-md{
+    font-size: 3.2rem !important;
+    line-height: 4rem !important;
+  }  
+  @include mobile-sm{
+    font-size:3rem !important;
+    line-height: 3.8rem !important;
+  }
+  @include mobile-xs{
+    font-size: 2.4rem !important;
+    line-height: 3rem !important;
+  }
+}
+
+h2{
+  color: $cWhite;
+  font-size: 5rem;
+  font-weight: $fw-semibold;
+  text-align: center;
+}
+h3{
+  font-size: 2.2rem;
+  color: $c1-500;
+  font-weight: $fw-semibold;
+  @include tablet-md{
+    font-size: 3.2rem !important;
+  }
+  @include mobile-sm{
+    font-size: 3rem !important;
+    line-height: 3.8rem !important;
+  }
+  @include mobile-xs{
+    font-size: 2.4rem !important;
+    line-height: 3rem !important;
+  }
+}
+h4{
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: $fw-semibold;
+  color: $c1-500;
+  @include tablet-md{
+    font-size: 2.2rem !important;
+    line-height: 2.4rem !important;
+  }
+}
+h5{
+  font-size: 1.4rem;
+  font-size: $fw-semibold;
+  line-height: 3rem;
+  text-transform: uppercase;
+  display: block;
+  color: $c1-100;
+ 
+}

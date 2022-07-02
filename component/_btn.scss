@@ -1,0 +1,19 @@
+.btn{
+    padding: 1.5rem 5rem;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: $fw-semibold;
+    border-radius: 0.8rem;
+    border: 0.0625rem solid transparent;
+    text-align: center;
+}
+.btn-primary{
+    color: $cWhite;
+    border-color: $c2-200;
+    background-color: $c2-200;
+}
+.btn-primary:hover{
+    color: $cWhite;
+    background-color: $c2-300;
+    border-color: $c2-400;
+}
